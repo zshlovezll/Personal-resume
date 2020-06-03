@@ -1,0 +1,433 @@
+
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    box-sizing: border-box;
+}
+.row1{
+    position: relative;
+    /* background-color: red; */
+    height: 100vh;
+}
+.imgDiv{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.imgDiv>ul>li>img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.myInfo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0px;
+    padding: 34vh 0 0;
+    
+}
+.btn{
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+h3,h1,.about,.works{
+    text-align: center;
+}
+.about,.works{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    
+}
+.about{
+    background-color: #2c3e50;
+    color: #ffffff;
+    margin-right: 10px;
+}
+.works{
+    background-color: #fff;
+    margin-left: 10px;
+
+
+}
+h1,h3{
+    letter-spacing: 3px;
+}
+h1{
+    font-size: 50px;
+}
+h3{
+    
+    font-size: 20px;
+    padding: 4vh 0;
+}
+/* 关于我 */
+@media all and (max-width: 768px) {
+    .about,.works{
+        display: inline-block;
+        width: 231px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        border-radius: 5px;
+        margin-left: 20px;
+        margin-top: 10px;
+        
+    }
+}
+
+.nav{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #2c3e50;
+    color: #f5f5f5;
+}
+.nav-ul{
+    position: absolute;
+    right: 0px;
+    width: 749px;
+    overflow: hidden;
+}
+.nav-ul>li{
+    cursor: pointer;
+
+    float: left;
+}
+.left{
+    font-weight: bolder;
+    font-size: 30px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+}
+.right>.nav-ul>li{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    margin: 0 20px;
+}
+.img{
+    color: #fff;
+    width: 100%;
+    display: none;
+}
+.img>.inner-img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+
+}
+.img>.img-ul{
+    width: 100%;
+    height: 180px;
+    margin-top: 0px;
+    background-color: #2c3e50;
+    display: none;
+}
+.img>.img-ul>li{
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+@media all and (max-width: 768px) {
+    .nav-ul{
+      display: none;
+        
+    }
+    .img{
+        display: block;
+    }
+}
+
+.active{
+    color: #E87E04;;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 150px 0 0;
+}
+.content>h2{
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    color: #2c3e50;
+    letter-spacing: 2px;
+    
+}
+.content>hr{
+    height: 4px;
+    width: 0px;
+    text-align: center;
+    position: relative;
+    background: #E87E04;
+    margin: 0 auto 50px;
+    border: 0;
+    transition: all 0.5s 0.2s;
+}
+.content>p{
+    padding: .5em 0 0em;
+    text-indent: 2em;
+}
+
+
+.icon{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.icon>img{
+    width: 180px;
+    height: 180px;
+    
+    border-radius: 50%;
+}
+
+
+
+/* 技能 */
+
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 207px 0 0;
+    
+}
+
+.skill>h2{
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    color: #2c3e50;
+    letter-spacing: 2px;
+    
+}
+.skill>hr{
+    height: 4px;
+    width: 0px;
+    text-align: center;
+    position: relative;
+    background: #E87E04;
+    margin: 0 auto 50px;
+    border: 0;
+    transition: all 0.5s 0.2s;
+}
+
+.three-page>.skill>p{
+    font-size: 13px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #897f8a;
+    text-align: center;
+}
+.skill>.row2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills{
+    margin: 5px 20px;
+
+}
+.skills>h4{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+
+@media all and (min-width: 569px) {
+    .skills{
+        width: 20vw;
+    }
+}
+
+@media all and (max-width: 569px) {
+    .skills{
+        width: 80vw;
+    }
+}
+
+
+/* 作品集 */
+
+
+.some-wrok{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 150px 0 0;
+    
+}
+
+.some-wrok>h2{
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    color: #2c3e50;
+    letter-spacing: 2px;
+    
+}
+.some-wrok>hr{
+    height: 4px;
+    width: 0px;
+    text-align: center;
+    position: relative;
+    background: #E87E04;
+    margin: 0 auto 50px;
+    border: 0;
+    transition: all 0.5s 0.2s;
+}
+.zuopin{
+    margin: 10px 20px;
+    position: relative;
+}
+.zuopin>.imgbox{
+    width: 100%;
+}
+.zuopin>.imgbox>img{
+    width: 100%;
+}
+.zp-cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-left: 0px;
+    background-color: rgb(65, 66, 67);
+    opacity: .85;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.zp-cover>img{
+    width: 30px;
+    height: 30px;
+}
+.zp-cover{
+    opacity: 0;
+    transition: all 1s
+}
+
+.zuopin{transition: all 0.8s}
+.zuopin:hover{
+    transform:scale(1.03);
+    
+}
+.zuopin:hover .zp-cover{
+    opacity:.85;
+
+    
+}
+
+@media all and (max-width: 569px) {
+    .zp-cover{
+        opacity: .85;
+    }
+}
+
+/* 技术掌握 */
+
+.master{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 150px 0 0;
+    
+}
+
+.master>h2{
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    color: #2c3e50;
+    letter-spacing: 2px;
+    
+}
+.master>hr{
+    height: 4px;
+    width: 0px;
+    text-align: center;
+    position: relative;
+    background: #E87E04;
+    margin: 0 auto 50px;
+    border: 0;
+    transition: all 0.5s 0.2s;
+}
+.master>.myMaster{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.master>.myMaster>h6{
+    margin: 20px 90px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* 联系我 */
+.six-page{
+    height: 800px;
+}
+
+.call{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 150px 0 0;
+    
+}
+
+.call>h2{
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    color: #2c3e50;
+    letter-spacing: 2px;
+    
+}
+.call>hr{
+    height: 4px;
+    width: 0px;
+    text-align: center;
+    position: relative;
+    background: #E87E04;
+    margin: 0 auto 50px;
+    border: 0;
+    transition: all 0.5s 0.2s;
+}
+.call>p{
+    font-size:30px;
+    line-height: 27px;
+    font-weight: 400;
+    font-weight: 600;
+    text-align: center;
+}
